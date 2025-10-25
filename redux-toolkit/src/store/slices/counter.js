@@ -7,7 +7,17 @@ const initialState = {
 
 
 export const counterSlice = createSlice({
+    
     name :'counter',
     initialState,
-    reducers
-})
+    reducers :{
+        handleIncreaseCountAction : (state,action) =>{
+            state.countValue += 1
+        },
+    },
+});
+
+
+export const {handleIncreaseCountAction} = counterSlice.actions;
+
+export default counterSlice.reducer;
