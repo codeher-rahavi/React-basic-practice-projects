@@ -27,7 +27,7 @@ console.log(users,isLoading);
         <div>
             {
                 isLoading ? (
-                    <h1>Loading data...</h1> )
+                    <h1>Loading data.....</h1> )
                     : 
                     <ul>
                         {
